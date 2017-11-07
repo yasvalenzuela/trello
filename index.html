@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- sitio optimizado para móvil  -->
+	<meta name = "viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>Trello</title>
+	<!-- linkear css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- fuentes -->
+	<link href="https://fonts.googleapis.com/css?family=lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
+	<!-- fontawesome -->
+	<script src="https://use.fontawesome.com/5317c4f18c.js"></script>
+</head>
+<body>
+	<header>
+		<!-- botton trello -->
+		<button id="btnTrello"><i class="fa fa-trello" aria-hidden="true"></i>Tableros</button>
+		<div id="buscador">
+			<!-- buscador -->
+			<input type="text" id="search">
+			<span><i class="fa fa-search" aria-hidden="true"></i></span>
+		</div>
+		<!-- icono trello del medio header -->
+		<span id="trello"><i class="fa fa-trello" aria-hidden="true"></i>Trello</span>
+		<ul id="menuEnd">
+			<li><button><i class="fa fa-plus" aria-hidden="true"></i></button></li>
+			<li><button><i class="fa fa-info-circle" aria-hidden="true"></i></button></li>
+			<li><button><i class="fa fa-bell-o" aria-hidden="true"></i></button></li>
+			<li><button></button></li>
+		</ul>
+	</header>	
+	<section>
+		<div id="user">
+			<ul>
+				<li id="subtitle">Tablero -</li>
+				<li id="subtitle">Reto de Código</li>
+				<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+				<li><i class="fa fa-lock" aria-hidden="true"></i>Privado</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<div id="List">
+			<button type="button" name="añadirLista" id="lista">Añadir una lista...</button>
+		</div>
+		<div id="formularioOculto">
+			<input type="text" id="listaOculta" placeholder="Añadir una lista...">
+			<button>Guardar</button>
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div>
+	</section>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

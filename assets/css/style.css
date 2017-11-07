@@ -1,0 +1,177 @@
+body{
+	background-color: #0079BF;
+}
+
+header{
+	position: fixed;
+	background-color: #026AA7;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+
+#btnTrello{
+	float: left;
+	position: absolute;
+	background-color: #67A6CA;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	width: 100px;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Arial;
+	line-height: 30px;
+	font-weight: 700; 
+	top: 5px;
+	left: 5px;
+}
+
+#btnTrello i{
+	padding-right: 5px; 
+}
+
+#buscador{
+	color: #ffffff;
+}
+
+#buscador input{
+	position: absolute;
+	background-color: #67A6CA;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	width: 180px;
+	left: 115px;
+	top: 5px;
+	height: 30px;
+}
+
+#buscador .fa-search{
+	position: absolute;
+	float: left;
+	margin-left: 260px;
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 18px;
+}
+
+#trello{
+	position: absolute;
+	font-size: 20px;
+	color: #67A6CA;
+	margin-left: 610px;
+	font-family: "Helvetica Neue", Arial, Helvet;
+	line-height: 18px;
+	top: 5px;	
+}
+
+#trello .fa-trello{
+	padding-right: 5px;
+}
+
+#menuEnd{
+	margin-top: 5px;
+	list-style: none;
+	border: 1px solid transparent;
+}
+#menuEnd li button i{
+	font-size: 20px;
+}
+
+#menuEnd li{
+	display: inline-block;
+
+}
+
+#menuEnd li:first-child{
+	margin-left: 1100px;
+}
+
+#user{
+	font-size: 16px;
+	margin-top: 80px;
+	margin-left: 80px;
+	color: #ffffff;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+#user ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+#subtitle{
+	font-size: 19px;
+	line-height: 30px;
+	font-weight: 700;
+	margin-right: 15px;
+}
+
+#user ul li i{
+	font-weight: 700;
+	margin-right: 15px;
+}
+
+#user ul li:last-child{
+	font-weight: 500;
+	font-size: 17px;
+}
+
+#lista{
+	background-color: #0067A3;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	width: 270px;
+	padding: 15px;
+	margin-left: 20px;
+}
+
+#Lista button{
+	color: #ffffff;
+	font-size: 17px;
+}
+#formularioOculto{
+	background-color: #E2E4E6;
+	width: 310px;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 15px;
+	border 1px solid #AAAAAA;
+	border-radius: 2px;
+}
+#listaOculta{
+	background-color: #D6D8DA;
+	border: 1px solid #AAAAAA;
+	border-radius: 5px;
+	width: 270px;
+	padding: 15px;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+
+#listaOculta::placeholder{
+	color: #AAAAAA;
+	font-size: 17px;
+}
+
+#formularioOculto button{
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background-color: #519839;
+	color: #ffffff;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 17px;
+	padding: 5px 0px;
+}
+
+#formularioOculto i{
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 25px;
+}
+

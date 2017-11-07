@@ -10,7 +10,8 @@ header{
 	top: 0;
 	left: 0;
 }
-
+/*menu*/
+/*boton trello*/
 #btnTrello{
 	float: left;
 	position: absolute;
@@ -31,6 +32,7 @@ header{
 	padding-right: 5px; 
 }
 
+/*buscador*/
 #buscador{
 	color: #ffffff;
 }
@@ -55,6 +57,7 @@ header{
 	font-size: 18px;
 }
 
+/*icono trello del medio*/
 #trello{
 	position: absolute;
 	font-size: 20px;
@@ -69,6 +72,7 @@ header{
 	padding-right: 5px;
 }
 
+/*ultima parte del menu*/
 #menuEnd{
 	margin-top: 5px;
 	list-style: none;
@@ -87,6 +91,7 @@ header{
 	margin-left: 1100px;
 }
 
+/*primera seccion del body*/
 #user{
 	font-size: 16px;
 	margin-top: 80px;
@@ -119,19 +124,21 @@ header{
 	font-size: 17px;
 }
 
-#lista{
+/*formulario oculto*/
+/*boton añadir comentario*/
+
+#List button{
 	background-color: #0067A3;
+	font-size: 17px;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	width: 270px;
-	padding: 15px;
+	padding: 15px 5px;
 	margin-left: 20px;
+	color: #67A6CA;
 }
 
-#Lista button{
-	color: #ffffff;
-	font-size: 17px;
-}
+/*formulario oculto*/
 #formularioOculto{
 	background-color: #E2E4E6;
 	width: 310px;

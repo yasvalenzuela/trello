@@ -29,7 +29,8 @@ header{
 }
 
 #btnTrello i{
-	padding-right: 5px; 
+	padding-right: 5px;
+	font-size: 17px; 
 }
 
 /*buscador*/
@@ -70,6 +71,7 @@ header{
 
 #trello .fa-trello{
 	padding-right: 5px;
+	font-size: 20px;
 }
 
 /*ultima parte del menu*/
@@ -78,6 +80,7 @@ header{
 	list-style: none;
 	border: 1px solid transparent;
 }
+
 #menuEnd li button i{
 	font-size: 20px;
 }
@@ -88,9 +91,26 @@ header{
 }
 
 #menuEnd li:first-child{
-	margin-left: 1100px;
+	margin-left: 1150px;
 }
 
+li button {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	background-color: #67A6CA;
+}
+
+.fa-plus, .fa-info-circle, .fa-bell-o{
+	padding: 3px 0px;
+	color: #ffffff;
+}
+
+.btnPerfil{
+	padding: 7px 5px;
+	color: #ffffff;
+	border-radius: 20px;
+	font-size: 15px;
+}
 /*primera seccion del body*/
 #user{
 	font-size: 16px;
@@ -124,8 +144,7 @@ header{
 	font-size: 17px;
 }
 
-/*formulario oculto*/
-/*boton añadir comentario*/
+/*boton añadir lista*/
 
 #List button{
 	background-color: #0067A3;
@@ -138,6 +157,26 @@ header{
 	color: #67A6CA;
 }
 
+/*div vacio que contiene los nombres de lista que ingrese el usuario*/
+#contenedorLista{
+	width: 15px;
+	height: auto;
+}
+
+#contenedorLista div{
+	background-color: #E2E4E6;
+	float: left;
+	margin-left: 15px;
+	width: 270px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border 1px solid #AAAAAA;
+	border-radius: 2px;
+	/*display: inline-block;*/
+	padding: 5px;
+	vertical-align: top;
+}
+
 /*formulario oculto*/
 #formularioOculto{
 	background-color: #E2E4E6;
@@ -147,6 +186,7 @@ header{
 	margin-left: 15px;
 	border 1px solid #AAAAAA;
 	border-radius: 2px;
+	display: inline-block;
 }
 #listaOculta{
 	background-color: #D6D8DA;
@@ -182,3 +222,23 @@ header{
 	font-size: 25px;
 }
 
+
+
+
+/*
+#cont {
+	text-align: left;
+	width: 500px;
+	height: auto;
+	color: #535658;
+}
+#cont div {
+	width: 580px;
+	height: auto; 
+	margin-top: 10px;
+	padding: 16px 10px;
+	margin-bottom: 10px;
+	outline: 1px solid #DFC1E6;
+	background-color: #ffffff;
+}
+*/

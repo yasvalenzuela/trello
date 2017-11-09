@@ -29,7 +29,7 @@
 			<li><button><i class="fa fa-plus" aria-hidden="true"></i></button></li>
 			<li><button><i class="fa fa-info-circle" aria-hidden="true"></i></button></li>
 			<li><button><i class="fa fa-bell-o" aria-hidden="true"></i></button></li>
-			<li><button></button></li>
+			<li><button class="btnPerfil">YV</button></li>
 		</ul>
 	</header>	
 	<section>
@@ -43,16 +43,19 @@
 			</ul>
 		</div>
 	</section>
-	<section>
+	<section id="container">
 		<!-- boton añadir comentario -->
 		<div id="List">
 			<button type="button" name="añadirLista" id="lista">Añadir una lista...</button>
 		</div>
-		<!-- formulario oculto -->
-		<div id="formularioOculto">
+		<div id="tablero">
+			<div id="contenedorLista"></div>
+			<!-- formulario oculto -->
+			<div id="formularioOculto">
 			<input type="text" id="listaOculta" placeholder="Añadir una lista...">
-			<button>Guardar</button>
+			<button type="button" name="guardar" id="guardar">Guardar</button>
 			<i class="fa fa-times" aria-hidden="true"></i>
+			</div>
 		</div>
 	</section>
 	<!-- linkear javascript -->

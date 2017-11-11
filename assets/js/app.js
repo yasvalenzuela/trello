@@ -10,7 +10,9 @@ listita.addEventListener('click', function (){
 	formularioOculto.style.display = 'inline-block';
 });
 
+
 var guardar = document.getElementById('guardar');
+//evento de click al boton
 guardar.addEventListener('click', function(){
 	//texto ingresado
 	var guardado = document.getElementById('listaOculta').value;
@@ -18,29 +20,69 @@ guardar.addEventListener('click', function(){
 	document.getElementById('listaOculta').value = '';
 	//contenedor que esta en el html
 	var contenedorLista = document.getElementById('contenedorLista');
-	//el div que contiene cada lista
+	//creo el div que contiene cada lista
 	var nuevaLista = document.createElement('div');
-	nuevaLista.style.display='inline-block';
-
+	nuevaLista.setAttribute('id', 'nuevaLista');
+	//div que contiene elemento p
+	var nuevoElemento = document.createElement('div');
+	nuevoElemento.setAttribute('id', 'nuevoElemento');
+	//div que contiene elemento enlace
+	var elementoEnlace = document.createElement('div');
+	elementoEnlace.setAttribute('id', 'elementoEnlace');
 	//creo un nodo tipo texto	
 	var textoNombreLista = document.createTextNode(guardado);
 	//creo un parrafo
 	var elementoContenedor = document.createElement('p');
-	elementoContenedor.appendChild(textoNombreLista);
-	nuevaLista.appendChild(elementoContenedor);
-
-	contenedorLista.appendChild(nuevaLista);
-
-	//creo un enlace
-	var enlace = document.createElement('a');
 	//creo un nodo texto que diga añadir tarea
 	var agregar = document.createTextNode('Añadir tarea');
-
-
+	//creo un enlace
+	var enlace = document.createElement('a');
+	enlace.setAttribute('href', '#');
+	//agrego los nodos al html
+	elementoContenedor.appendChild(textoNombreLista);
+	nuevoElemento.appendChild(elementoContenedor);
 	enlace.appendChild(agregar);
-	nuevaLista.appendChild(enlace);
+	elementoEnlace.appendChild(enlace);
+	nuevaLista.appendChild(nuevoElemento);
+	nuevaLista.appendChild(elementoEnlace);
+	contenedorLista.appendChild(nuevaLista);
 
-})
+	enlace.addEventListener('click', function(){
+		enlace.style.display='none';
+		var contenedorform = document.getElementById('contenedorForm');
+		//div que contiene form
+		var contenedorGeneral = document.createElement('div');
+		contenedorGeneral.setAttribute('id', 'contenedorGeneral');
+		//div que contiene el formulario
+		var form = document.createElement('form');
+		//div que contiene el textarea
+		var textarea = document.createElement('textarea');
+		//div que contiene el button y el enlace
+		var button = document.createElement('button');
+		button.setAttribute('type', 'button');
+		button.setAttribute('name', 'añadir');
+		button.setAttribute('id', 'añadir');
+		var buttonAñadir = document.createTextNode('Añadir');
+		var enlaceCierre = document.createElement('a');
+		enlaceCierre.setAttribute('href', '#');
+		var icono = document.createElement('i');
+		icono.setAttribute('class', 'fa fa-times');
+		icono.setAttribute('aria-hidden', 'true');
+		//class="fa fa-times" aria-hidden="true"
+		button.appendChild(buttonAñadir);
+		form.appendChild(textarea);
+		form.appendChild(button);
+		form.appendChild(icono);
+		contenedorGeneral.appendChild(form);
+		contenedorForm.appendChild(contenedorGeneral);
+
+	})
+	
+
+});
+
+
+
 
 
 

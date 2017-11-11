@@ -159,34 +159,55 @@ li button {
 
 /*div vacio que contiene los nombres de lista que ingrese el usuario*/
 #contenedorLista{
-	width: 15px;
 	height: auto;
+	display: inline-flex;
 }
 
 #contenedorLista div{
 	background-color: #E2E4E6;
 	float: left;
-	margin-left: 15px;
-	width: 270px;
+	margin-left: 19px;
+	width: 300px;
 	margin-top: 10px;
 	margin-right: 10px;
 	border 1px solid #AAAAAA;
 	border-radius: 2px;
-	/*display: inline-block;*/
+	/*display: inline-flex;*/
 	padding: 5px;
 	vertical-align: top;
 }
 
+#contenedorLista a{
+	text-decoration: none;
+}
+#contenedorLista a:hover{
+	text-decoration: underline;
+}
+
+/*div que contiene div de elemento p y div elemento enlace*/
+#nuevaLista div{
+	margin: 10px 0px 0px 0px;
+	padding: 5px 0px 0px 1px;
+}
+
+
 /*formulario oculto*/
-#formularioOculto{
+
+#formularioOculto {
 	background-color: #E2E4E6;
 	width: 310px;
 	height: auto;
 	margin-top: 10px;
-	margin-left: 15px;
-	border 1px solid #AAAAAA;
+	margin-left: 20px;
+	text-align: top;
+	border: 1px solid #AAAAAA;
 	border-radius: 2px;
+	vertical-align: top;
+	
+}
+#formularioOculto div{
 	display: inline-block;
+
 }
 #listaOculta{
 	background-color: #D6D8DA;
@@ -223,22 +244,46 @@ li button {
 }
 
 
-
-
-/*
-#cont {
-	text-align: left;
-	width: 500px;
+#contenedorForm{
 	height: auto;
-	color: #535658;
+	display: block;
 }
-#cont div {
-	width: 580px;
-	height: auto; 
+
+
+#contenedorForm div{
+	width: 310px;
+	margin-left: 19px;
+	margin-right: 10px;
+	background-color: #E2E4E6;
+    /* background-color: #D6D8DA; */
+    border-radius: 1px;
+	/*border-radius: 5px; */
+	margin-top: -1px;
+	display: inline-block;
+}
+
+#contenedorForm form textarea{
+	width: 295px;
+	height: 54px;
+	resize: none;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+#contenedorForm form button{
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background-color: #519839;
+	color: #ffffff;
+	width: 100px;
 	margin-top: 10px;
-	padding: 16px 10px;
+	margin-left: 10px;
 	margin-bottom: 10px;
-	outline: 1px solid #DFC1E6;
-	background-color: #ffffff;
+	font-size: 17px;
+	padding: 5px 0px;
 }
-*/
+
+#contenedorForm i{
+	margin-left: 20px;
+	font-size: 25px;
+}
+

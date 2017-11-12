@@ -190,7 +190,6 @@ li button {
 	padding: 5px 0px 0px 1px;
 }
 
-
 /*formulario oculto*/
 
 #formularioOculto {
@@ -209,6 +208,7 @@ li button {
 	display: inline-block;
 
 }
+
 #listaOculta{
 	background-color: #D6D8DA;
 	border: 1px solid #AAAAAA;
@@ -251,8 +251,8 @@ li button {
 
 
 #contenedorForm div{
-	width: 310px;
-	margin-left: 19px;
+	/*width: 310px;*/
+	/*margin-left: 19px;*/
 	margin-right: 10px;
 	background-color: #E2E4E6;
     /* background-color: #D6D8DA; */
@@ -261,6 +261,7 @@ li button {
 	margin-top: -1px;
 	display: inline-block;
 }
+
 
 #contenedorForm form textarea{
 	width: 295px;
@@ -287,3 +288,47 @@ li button {
 	font-size: 25px;
 }
 
+#contenedorGeneral{
+	width: 310px;
+	margin-left: 19px;
+}
+#contenedorTarea{
+	width: 310px;
+	margin-left: 19px;
+	display: inline-block;
+
+}
+
+#contenedorTarea div{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 0px 5px 5px;
+}
+	
+#contenedorTarea p{
+	background-color: #ffffff;
+	width: 290px;
+	padding: 0px 0px 5px 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+
+}
+	
+/*
+
+#contenedorLista div{
+	background-color: #E2E4E6;
+	float: left;
+	margin-left: 19px;
+	width: 300px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border 1px solid #AAAAAA;
+	border-radius: 2px;
+	/*display: inline-flex;*/
+/*	padding: 5px;
+	vertical-align: top;
+}
+*/
